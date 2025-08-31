@@ -6,7 +6,7 @@ function Popup({moves, time, handleNewGame}: {moves: number, time: string, handl
             <h2 className="text-[1.5rem] font-bold">Congratulations!</h2>
             <p>You finished the game in <span className="font-bold">{moves}</span> moves.</p>
             <p>Time: <span className="ml-1 font-medium">{time}</span></p>
-            <button className="px-4 py-2 text-white bg-blue-500 rounded-md" onClick={() => {handleNewGame()}}>Play Again</button>
+            <button className="px-4 py-2 text-white bg-blue-500 rounded-md hover:scale-105 active:scale-90" onClick={() => {handleNewGame()}}>Play Again</button>
         </div>
     </div>
   );

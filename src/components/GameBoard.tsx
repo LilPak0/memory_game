@@ -4,7 +4,7 @@ function GameBoard({ board , handleClickCard , flipped, matched } : { board: str
 
 
   return (
-    <div className="p-5 bg-white rounded-md flex gap-4">
+    <div className="p-5 bg-white rounded-md flex gap-4 shadow-lg">
         {board.map((row, rowIndex) => (
             <div key={rowIndex} className=" flex flex-col gap-4">
                 {row.map((card, cardIndex) => (
